@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>
+      text:
+    </th>
+    <td>
+      <input type="text" [(ngModel)]="item.text">
+    </td>
+  </tr>
+  <tr>
+    <th>
+      isActive:
+    </th>
+    <td>
+      <input type="checkbox" [(ngModel)]="item.isActive" value="True">
+    </td>
+  </tr>
+</table>
+<button routerLink="/item/detail/{{item._id}}" (click)="updateButtonClicked($event)">Update item</button>
+<button routerLink="/item"> Back</button>

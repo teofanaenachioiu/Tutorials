@@ -1,0 +1,8 @@
+<h2>Items</h2>
+<div *ngIf="!items && !error">Loading...</div>
+<div *ngIf="error" (click)="retry()">{{error.status === 404 ? 'Item not found' : 'Service unavailable or no connectivity'}}</div>
+<ul>
+  <li *ngFor="let item of items">
+    <a routerLink="/item/detail/{{item._id}}">{{ item.text }}</a>
+  </li>
+</ul>
