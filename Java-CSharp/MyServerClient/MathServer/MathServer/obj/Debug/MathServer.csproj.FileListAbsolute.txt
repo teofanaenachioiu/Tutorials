@@ -1,0 +1,9 @@
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\obj\Debug\MathServer.csproj.CoreCompileInputs.cache
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\bin\Debug\MathServer.exe.config
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\bin\Debug\MathServer.exe
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\bin\Debug\MathServer.pdb
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\bin\Debug\Thrift45.dll
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\obj\Debug\MathServer.csprojAssemblyReference.cache
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\obj\Debug\MathServer.csproj.CopyComplete
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\obj\Debug\MathServer.exe
+D:\Tutorials\Java-CSharp\MyServerClient\MathServer\MathServer\obj\Debug\MathServer.pdb

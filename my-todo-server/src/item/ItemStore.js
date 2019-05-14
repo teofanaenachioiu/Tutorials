@@ -47,8 +47,9 @@ export class ItemStore {
         return this.db.insert(item);
     }
 
-    find = async props => {
+    find = async (props) => {
         return this.db.find(props);
+
         // return new Promise(((resolve, reject) => {
         //     try {
         //         const result = [];

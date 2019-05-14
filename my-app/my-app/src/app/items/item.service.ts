@@ -22,16 +22,18 @@ export class ItemService {
   private itemSubject: BehaviorSubject<Item[]>;
 
   constructor(private http: HttpClient) {
-    this.itemSubject = new BehaviorSubject(null);
+    this.itemSubject = new BehaviorSubject([]);
     const ws: any = new WebSocket(`ws://${serverUrl}`);
 
     ws.onopen = () => {
       const token = localStorage.getItem('token');
       ws.send(JSON.stringify({token}));
+      console.log('Conexiune creata');
     };
 
     ws.onmessage = eventRecv => {
       const {event, payload} = JSON.parse(eventRecv.data);
+      console.log('Intra in onmessage');
       switch (event) {
         case 'created': {
           const items = this.itemSubject.getValue() || [];
@@ -49,16 +51,16 @@ export class ItemService {
           this.itemSubject.next(items);
           break;
         }
-        // case 'updated': {
-        //   const items = this.itemSubject.getValue();
-        //   for (let i = 0; i < items.length; i++) {
-        //     if (items[i]._id === payload._id) {
-        //       Object.assign(items[i], payload);
-        //     }
-        //   }
-        //   this.itemSubject.next(items);
-        //   break;
-        // }
+        case 'updated': {
+          const items = this.itemSubject.getValue();
+          for (let i = 0; i < items.length; i++) {
+            if (items[i]._id === payload._id) {
+              Object.assign(items[i], payload);
+            }
+          }
+          this.itemSubject.next(items);
+          break;
+        }
       }
       console.log(event);
     };
@@ -79,6 +81,8 @@ export class ItemService {
   }
 
   update(item: Item) {
+    console.log('Vrea sa intre in put');
+    console.log(item);
     return this.http.put(`${itemUrl}/${item._id}`, item, this.authHttpOptions());
   }
 
@@ -96,7 +100,7 @@ export class ItemService {
   }
 
   getById(id: string) {
-    console.log(`${itemUrl}/${id}`);
+    //console.log(`${itemUrl}/${id}`);
     return this.http.get<Item>(`${itemUrl}/${id}`, this.authHttpOptions());
   }
 }

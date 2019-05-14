@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="509add62-4f2f-4bf8-b733-8f0ae5a9cfe9" name="Default Changelist" comment="" />
+    <list default="true" id="509add62-4f2f-4bf8-b733-8f0ae5a9cfe9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Java-CSharp/MyServerClient/MathClient/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java-CSharp/MyServerClient/MathClient/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java-CSharp/MyServerClient/MathClient/src/main/java/org/teofana/math/MathService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My-App-Mobile/src/app/auth/auth-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My-App-Mobile/src/app/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My-App-Mobile/src/app/items/item.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My-App-Mobile/src/app/items/item.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../My-App-Mobile/src/assets/icon/ionicLogo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-add.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/item.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my-app/my-app/src/app/items/items.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../my-app/my-app/src/app/items/items.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/db/items.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/wsBroadcast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/wsBroadcast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/ItemStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/ItemStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/itemRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/itemRouter.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/item/itemRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="283">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -28,10 +55,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/wsBroadcast.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="319">
+              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auth/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auth/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/item/ItemStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,14 +118,21 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>status</find>
+      <find>cons</find>
+      <find>console</find>
+      <find>page</find>
+      <find>console.</find>
+      <find>con</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/item/Item.js" />
-        <option value="$PROJECT_DIR$/src/item/ItemStore.js" />
         <option value="$PROJECT_DIR$/src/auth/index.js" />
         <option value="$PROJECT_DIR$/src/utils.js" />
         <option value="$PROJECT_DIR$/src/auth/store.js" />
@@ -65,16 +141,20 @@
         <option value="$PROJECT_DIR$/src/core/index.js" />
         <option value="$PROJECT_DIR$/src/auth/router.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/item/ItemStore.js" />
         <option value="$PROJECT_DIR$/src/core/wsBroadcast.js" />
         <option value="$PROJECT_DIR$/src/item/itemRouter.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="253" />
-    <option name="y" value="86" />
-    <option name="width" value="844" />
+    <option name="x" value="755" />
+    <option name="y" value="82" />
+    <option name="width" value="652" />
     <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -87,11 +167,6 @@
             <path>
               <item name="my-todo-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-todo-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-todo-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-todo-server" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-todo-server" type="b2602c69:ProjectViewProjectNode" />
@@ -110,12 +185,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="my-todo-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-todo-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -126,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../My-App-Mobile v2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -180,17 +249,26 @@
       <workItem from="1554703357190" duration="5588000" />
       <workItem from="1555000693042" duration="16000" />
       <workItem from="1555047102284" duration="7330000" />
+      <workItem from="1555307995843" duration="6956000" />
+      <workItem from="1555613675977" duration="602000" />
+      <workItem from="1555651488449" duration="1674000" />
+      <workItem from="1555655383999" duration="3926000" />
+      <workItem from="1555852407030" duration="3435000" />
+      <workItem from="1555913101152" duration="7289000" />
+      <workItem from="1556792999893" duration="4000" />
+      <workItem from="1557070370656" duration="2863000" />
+      <workItem from="1557122231394" duration="3909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56523000" />
+    <option name="totallyTimeSpent" value="87181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26860118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18080357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -203,7 +281,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30756843" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32206118" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -233,13 +311,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -247,36 +318,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/ValidationError.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jsonwebtoken/verify.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -285,20 +328,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/core/Issue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/item/Item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/items.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-119">
+          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -309,40 +366,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/item/ItemStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="-238">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/Issue.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/item/Item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/wsBroadcast.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="319">
+          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/item/itemRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="283">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>

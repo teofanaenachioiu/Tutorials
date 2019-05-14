@@ -9,30 +9,35 @@ export const init = server => {
 
     wss.on('connection', ws => {
         ws.on('message', message => {
-            console.log('received: %s', message);
+            //console.log('received: %s', message);
             const {token} = JSON.parse(message);
             try {
                 const signInfo = jwt.verify(token, jwtConfig.secret);
                 ws.user = {userId: signInfo._id};
-                console.log(signInfo);
+                //console.log(signInfo);
             } catch (e) {
                 ws.close();
                 console.log('Connection closed!!!!');
-                console.log(e);
+                //console.log(e);
             }
         });
 
     });
 };
 
-export const brodcast = ({event, payload}) =>
+export const brodcast = ({event, payload}) => {
+    //console.log("Inainte de broadcast");
     wss.clients.forEach(ws => {
+        console.log("CLIENT");
         if (ws.readyState === WebSocket.OPEN) {
             const userId = ws.user ? ws.user.userId : null;
-            console.log(ws.user);
+            //console.log(ws.user);
             if (ws.readyState === WebSocket.OPEN && userId === payload.userId) {
+                //console.log(event);
                 ws.send(JSON.stringify({event, payload}));
+
             }
 
         }
     });
+};

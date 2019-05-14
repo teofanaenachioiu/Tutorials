@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <span>Item details</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="item">
+    <ion-card-header>
+      <ion-card-title>{{item.text}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="fixed">text</ion-label>
+        <ion-input [(ngModel)]="item.text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="fixed">active</ion-label>
+        <ion-checkbox checked="{{item.isActive}}" [(ngModel)]="item.isActive"></ion-checkbox><ion-label>True</ion-label>
+      </ion-item>
+      <br>
+      <ion-button (click)="updateItem()"><ion-icon name="create"></ion-icon>Save changes</ion-button>
+      <ion-button (click)="deleteItem()"><ion-icon name="trash"></ion-icon>Delete</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

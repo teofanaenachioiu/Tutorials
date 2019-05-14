@@ -320,7 +320,7 @@ const init = server => {
   });
   wss.on('connection', ws => {
     ws.on('message', message => {
-      console.log('received: %s', message);
+      //console.log('received: %s', message);
       const {
         token
       } = JSON.parse(message);
@@ -329,12 +329,10 @@ const init = server => {
         const signInfo = jsonwebtoken__WEBPACK_IMPORTED_MODULE_1___default.a.verify(token, _core__WEBPACK_IMPORTED_MODULE_2__["jwtConfig"].secret);
         ws.user = {
           userId: signInfo._id
-        };
-        console.log(signInfo);
+        }; //console.log(signInfo);
       } catch (e) {
         ws.close();
-        console.log('Connection closed!!!!');
-        console.log(e);
+        console.log('Connection closed!!!!'); //console.log(e);
       }
     });
   });
@@ -342,19 +340,24 @@ const init = server => {
 const brodcast = ({
   event,
   payload
-}) => wss.clients.forEach(ws => {
-  if (ws.readyState === ws__WEBPACK_IMPORTED_MODULE_0___default.a.OPEN) {
-    const userId = ws.user ? ws.user.userId : null;
-    console.log(ws.user);
+}) => {
+  //console.log("Inainte de broadcast");
+  wss.clients.forEach(ws => {
+    console.log("CLIENT");
 
-    if (ws.readyState === ws__WEBPACK_IMPORTED_MODULE_0___default.a.OPEN && userId === payload.userId) {
-      ws.send(JSON.stringify({
-        event,
-        payload
-      }));
+    if (ws.readyState === ws__WEBPACK_IMPORTED_MODULE_0___default.a.OPEN) {
+      const userId = ws.user ? ws.user.userId : null; //console.log(ws.user);
+
+      if (ws.readyState === ws__WEBPACK_IMPORTED_MODULE_0___default.a.OPEN && userId === payload.userId) {
+        //console.log(event);
+        ws.send(JSON.stringify({
+          event,
+          payload
+        }));
+      }
     }
-  }
-});
+  });
+};
 
 /***/ }),
 
@@ -404,6 +407,13 @@ Object(_core_wsBroadcast__WEBPACK_IMPORTED_MODULE_6__["init"])(server);
 app.use(_utils__WEBPACK_IMPORTED_MODULE_3__["logger"]);
 app.use(_utils__WEBPACK_IMPORTED_MODULE_3__["errorHandler"]);
 app.use(koa_bodyparser__WEBPACK_IMPORTED_MODULE_5___default()());
+app.use(async (ctx, next) => {
+  // await new Promise((resolve => {
+  //     setTimeout(resolve, 3000);
+  // }));
+  console.log(ctx.request);
+  await next();
+});
 const prefix = '/api'; //public
 
 const publicApiRouter = new koa_router__WEBPACK_IMPORTED_MODULE_10___default.a({
@@ -435,12 +445,6 @@ server.listen(3000); // app
 //     });
 //
 //     ws.send('something');
-// });
-// app.use(async(ctx, next) => {
-//     await new Promise((resolve => {
-//         setTimeout(resolve, 3000);
-//     }));
-//     await next();
 // });
 
 /***/ }),
@@ -642,25 +646,36 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 const itemStore = new _ItemStore__WEBPACK_IMPORTED_MODULE_1__["ItemStore"]({
   filename: './db/items.json'
-});
-const router = new koa_router__WEBPACK_IMPORTED_MODULE_0___default.a(); // router.get('/item', async (ctx, next) => {
-//     ctx.response.body = await itemStore.find({});
-//     ctx.response.status = 200;
-// });
+}); // for (let i=0;i<50;i++){
+//     const item =new Item(`item ${i}`, false);
+//     item.userId = 'Ck0NQNspv3ZpwliY';
+//     item.version = 1;
+//     itemStore.insert(item);
+// }
 
+const router = new koa_router__WEBPACK_IMPORTED_MODULE_0___default.a();
 router.get('/', async (ctx, next) => {
-  const props = ctx.query;
-  ctx.response.body = await itemStore.find(_objectSpread({}, props, {
+  // const pageN = ctx.request.query.page || 0;
+  // const limita = ctx.request.query.limita || 9;
+  // const limit = parseInt(limita);
+  // const pageNr = parseInt(pageN);
+  // console.log(limit);
+  const props = ctx.request.query;
+  const result = await itemStore.find({
+    //...props,
     userId: ctx.state.user._id
-  }));
+  }); // console.log(pageNr * limit, pageNr * limit + limit);
+  // const resss =result.slice(pageNr * limit, pageNr * limit + limit);
+
+  ctx.response.body = JSON.stringify(result);
   ctx.response.status = 200;
 });
 router.get('/:id', async (ctx, next) => {
-  console.log(ctx.params.id);
+  //console.log(ctx.params.id);
   const res = await itemStore.find({
     _id: ctx.params.id
-  });
-  console.log(res);
+  }); //
+  // .log(res);
 
   if (res.length === 0) {
     ctx.response.status = 404;
@@ -680,14 +695,15 @@ router.post('/', async (ctx, next) => {
     version: 1
   }));
   ctx.response.body = item;
-  ctx.response.status = 200;
-  console.log(item);
+  ctx.response.status = 200; //console.log(item);
+
   Object(_core_wsBroadcast__WEBPACK_IMPORTED_MODULE_3__["brodcast"])({
     event: 'created',
     payload: item
   });
 });
 router.put('/:id', async (ctx, next) => {
+  console.log("Intra in put");
   const props = ctx.request.body;
   const id = ctx.params.id;
   const version = props.version;
@@ -717,25 +733,28 @@ router.put('/:id', async (ctx, next) => {
     _id: id,
     userId: ctx.state.user._id
   });
-  ctx.response.body = "UPDATED: " + count;
+  ctx.response.body = {
+    "UPDATED": count
+  };
   ctx.response.status = 200;
+  console.log("Acum ma pregatesc sa fac brodcast, ", newItem[0]);
   Object(_core_wsBroadcast__WEBPACK_IMPORTED_MODULE_3__["brodcast"])({
     event: 'updated',
-    payload: _objectSpread({
-      _id
-    }, props)
+    payload: newItem[0]
   });
 });
 router.delete('/:id', async (ctx, next) => {
   const props = {
     _id: ctx.params.id
   };
+  const found = await itemStore.find(props);
+  const payload = found[0];
   const count = await itemStore.remove(props);
   ctx.response.body = "DELETED: " + count;
   ctx.response.status = 200;
   Object(_core_wsBroadcast__WEBPACK_IMPORTED_MODULE_3__["brodcast"])({
     event: 'deleted',
-    payload: props
+    payload: payload
   });
 });
 
@@ -777,7 +796,7 @@ const logger = async (ctx, next) => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\my-todo-server\src/index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! D:\Tutorials\my-todo-server\src/index.js */"./src/index.js");
 
 
 /***/ }),

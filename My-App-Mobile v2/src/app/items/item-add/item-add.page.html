@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Add new item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="fixed">text</ion-label>
+    <ion-input [(ngModel)]="item.text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">active</ion-label>
+    <ion-checkbox [(ngModel)]="item.isActive"></ion-checkbox><ion-label>True</ion-label>
+  </ion-item>
+  <br>
+  <ion-button (click)="addItem()">ADD</ion-button>
+</ion-content>

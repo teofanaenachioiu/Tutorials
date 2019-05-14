@@ -2,6 +2,7 @@ import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Item} from './item';
 import {ItemService} from './item.service';
 import {ActivatedRoute} from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-item-edit',
@@ -11,7 +12,8 @@ export class ItemEditComponent implements OnInit, OnDestroy {
   @Input() item: Item;
   private subscriptions = [];
   private error: Error;
-  constructor(private activatedRoute: ActivatedRoute, private itemService: ItemService) {  }
+  constructor(private activatedRoute: ActivatedRoute,
+              private itemService: ItemService, private location: Location) { this.item = {_id: 'as', text: 'mytext', isActive: false}; }
 
   ngOnInit() {
     this.error = null;
@@ -29,13 +31,17 @@ export class ItemEditComponent implements OnInit, OnDestroy {
   }
 
   updateButtonClicked($event: MouseEvent) {
+    console.log(this.item);
     this.subscriptions.push(this.itemService.update(this.item).subscribe(
       item => {
+        console.log(item);
         alert('updated');
       },
       error => {
+        console.log('ERRRRRRRRRRRRRROR in updateButtonClicked');
         this.error = error;
         console.log(error);
       }));
+    this.location.back();
   }
 }

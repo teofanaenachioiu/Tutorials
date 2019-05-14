@@ -15,7 +15,10 @@ export class ItemComponent implements OnInit, OnDestroy {
   private subscriptions = [];
   error: HttpErrorResponse;
   private id: string;
-  constructor(private activatedRoute: ActivatedRoute, private itemService: ItemService, private location: Location) {}
+  constructor(private activatedRoute: ActivatedRoute, private itemService: ItemService, private location: Location) {
+    this.item = {_id: "as", text: "mytext", isActive: false}
+
+  }
 
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get('id');

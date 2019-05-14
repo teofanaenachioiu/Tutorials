@@ -4,7 +4,7 @@
       text:
     </th>
     <td>
-      <input type="text" [(ngModel)]="item.text">
+      <input type="text" [(ngModel)]="item.text" >
     </td>
   </tr>
   <tr>
@@ -16,5 +16,5 @@
     </td>
   </tr>
 </table>
-<button routerLink="/item/detail/{{item._id}}" (click)="updateButtonClicked($event)">Update item</button>
+<button (click)="updateButtonClicked($event)">Update item</button>
 <button routerLink="/item"> Back</button>

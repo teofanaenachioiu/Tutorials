@@ -20,6 +20,16 @@ app.use(logger);
 app.use(errorHandler);
 app.use(bodyparser());
 
+
+app.use(async(ctx, next) => {
+    // await new Promise((resolve => {
+    //     setTimeout(resolve, 3000);
+    // }));
+    console.log(ctx.request);
+    await next();
+
+});
+
 const prefix = '/api';
 //public
 const publicApiRouter = new Router({ prefix });
@@ -62,12 +72,4 @@ server.listen(3000);
 //     });
 //
 //     ws.send('something');
-// });
-
-
-// app.use(async(ctx, next) => {
-//     await new Promise((resolve => {
-//         setTimeout(resolve, 3000);
-//     }));
-//     await next();
 // });
