@@ -1,0 +1,7 @@
+D:\Tutorials\CSharpTutorial\MyApp\bin\Debug\MyApp.exe.config
+D:\Tutorials\CSharpTutorial\MyApp\bin\Debug\MyApp.exe
+D:\Tutorials\CSharpTutorial\MyApp\bin\Debug\MyApp.pdb
+D:\Tutorials\CSharpTutorial\MyApp\obj\Debug\MyApp.csprojAssemblyReference.cache
+D:\Tutorials\CSharpTutorial\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
+D:\Tutorials\CSharpTutorial\MyApp\obj\Debug\MyApp.exe
+D:\Tutorials\CSharpTutorial\MyApp\obj\Debug\MyApp.pdb

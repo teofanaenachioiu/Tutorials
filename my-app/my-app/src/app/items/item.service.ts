@@ -77,7 +77,11 @@ export class ItemService {
   }
 
   save(item: Item) {
-    return this.http.post<Item>(itemUrl, item, this.authHttpOptions());
+    return this.http.post<Item>(itemUrl, item, this.authHttpOptions())
+      .pipe(tap(() => {
+        const items =
+        this.itemSubject.next(items)
+      }));
   }
 
   update(item: Item) {
@@ -100,7 +104,6 @@ export class ItemService {
   }
 
   getById(id: string) {
-    //console.log(`${itemUrl}/${id}`);
     return this.http.get<Item>(`${itemUrl}/${id}`, this.authHttpOptions());
   }
 }
